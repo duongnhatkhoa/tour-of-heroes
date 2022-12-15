@@ -9,7 +9,8 @@ import { MessageService } from '../message.service';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit{
-  constructor(private heroService: HeroService, private messageService: MessageService){}
+  constructor(private heroService: HeroService){}
+
   ngOnInit(): void{
     this.getHeroes();
   }
